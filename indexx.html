@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthy Calorie Tracker</title>
+ <link rel="stylesheet" href="calories.css">
+    <meta name="description" content="Calculate your TDEE and BMI with our professional Healthy Calorie Tracker. Free, fast, and accurate tool for your fitness journey.">
+<meta name="keywords" content="Calorie Calculator, TDEE Tracker, BMI Calculator, Health Tool, Fitness Planner, Calorie Calculator, BMI, حساب السعرات الحرارية,حساب كتلة الجسم">
+<link rel="canonical" href="https://wafaa-kh-prog.github.io/Health-gauge/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+    <h2>Healthy Calorie Tracker</h2>
+    <p class="subtitle">Your health is an investment, not an expense</p>
+
+    <label>Age</label>
+    <input type="number" id="age" placeholder="e.g. 22" min="10" max="120">
+
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="e.g. 60">
+
+    <label>Height (cm)</label>
+    <input type="number" id="height" placeholder="e.g. 165">
+
+    <label>Gender</label>
+    <select id="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+    </select>
+
+    <label>Activity Level</label>
+    <select id="activity">
+        <option value="1.2">Little or no exercise</option>
+        <option value="1.375">Light exercise</option>
+        <option value="1.55">Moderate exercise</option>
+        <option value="1.725">Hard exercise</option>
+    </select>
+
+    <button onclick="calculateCalories()">Calculate Calories</button>
+
+    <div class="result" id="result"></div>
+
+   
+    <button onclick="clearForm()" class="btn-secondary">Clear</button>
+ 
+</div>
+</div>
+
+<body>
+    <script src="script.js"></script>
+</body>
+
+</body>
+</html> 
